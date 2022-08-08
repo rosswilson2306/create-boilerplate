@@ -1,12 +1,14 @@
 {
   "name": "@rosswilson23/create-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Starter project generator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin": "./bin/create.js",
+  "bin": {
+    "create-boilerplate": "bin/create.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rosswilson2306/create-boilerplate.git"
