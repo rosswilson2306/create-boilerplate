@@ -24,11 +24,10 @@ const main = () => {
     execSync('rm -rf node_modules');
 
     console.log('Installing dependencies...');
-    execSync(`cd ${appName}`);
-    execSync('npm i', { stdio: 'inherit' });
+    execSync(`cd ${appName} && npm i`, { stdio: 'inherit' });
 
-    console.log('Opening in VSCode...')
-    execSync('code .');
+    console.log('Opening in VSCode...');
+    execSync(`cd ${appName} && code .`);
   } catch (e) {
     console.error(e);
     process.exit(1);
